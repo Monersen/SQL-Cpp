@@ -261,6 +261,7 @@ int main()
 
         try {
             s.createTables();
+            enter_new_data_to_the_created_db(s);
             cout << "Table created\n";
         }
         catch (const Wt::Dbo::Exception& e) {
